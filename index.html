@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Is JavaScript enabled?</title>
+    <style>
+        h1 { font-weight: bold }
+        .no { color: red }
+        .yes { color: green; display: none; }
+    </style>
+</head>
+<body>
+        <h1>
+            Is JavaScript enabled?
+            <noscript><span class="no">NO!</span></noscript>
+            <span class="yes">YES!</span>
+        </h1>
+        <script>
+            document.querySelector('.yes').style.display = 'inline'
+        </script>
+</body>
+</html>
